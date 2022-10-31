@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver pretection</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2151ed312.js" crossorigin="anonymous"></script>
+    <link href="fonts/glyphicons-halflings-regular.eot" >
+    <style>
+        body
+        {
+            background-image: url(./image/liver.jpg);                 
+            background-repeat:no-repeat;
+            opacity: calc(1.5);
+        }
+        .container
+        {
+            background-color: black;
+             background-color: transparent;
+             align-content: center;
+
+        }
+        form
+        {
+
+            background-color:rgba(0, 0, 0,0.5) ;
+            height: 400px;
+            width: 400px;
+            padding: 10px;
+            border: 2px solid whitesmoke;
+            border-radius: 30px;
+            box-shadow: all 10px whitesmoke;
+            color: white;
+            justify-content: center;
+            margin: auto;
+            box-shadow: 1px 2px 20px cyan;
+        }
+        form:hover
+        {
+            background-color: rgba(0, 0, 0, 0.4);
+            box-shadow: inset 4px 1px 4px 1px whitesmoke;             
+                        
+        }   
+           
+        .btn
+        {
+            align-items: center;
+        }
+        #image
+        {
+            height: 400px;
+            width: 100px;
+            border-radius: 10px;
+        }
+       
+       a{
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        border-radius: 50px;
+        line-height: 60px;
+        border: 2px solid whitesmoke;
+        
+        
+       }
+       .centerdiv
+       {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 400px;
+        margin: auto;
+        height:15vh;
+        border-radius:40px ;
+        display: flex;
+        justify-content: center;
+        padding-top: 23px;
+        border: 2px solid cyan;
+       }
+       .fa-facebook
+       {
+        color: #2b4373;
+        border-radius: 20px;
+        transition: scale(1.4)step-end;
+        background-color: white;
+       }
+       .fa-google
+       {
+        color:rgb(50, 50, 50);
+        border-radius:20px ;
+        transition: scale(1.4)step-end;
+        background-color: white;
+       }
+       a i{
+        transition: all 0,3s linear;
+       }
+       a:hover i
+       {
+        transform: scale(1.4);
+       }
+      .form-control
+      {
+        border-radius: 125px;
+        border: 2px solid cyan;
+        background-color: transparent;
+        color: cyan;
+        
+      }
+      
+
+      .btn
+      {
+        background-color: transparent;
+        border: 2px solid cyan;
+        box-shadow: 1px 1px 10px white;
+        border-radius: 50px;
+        transition: scale(1.4)step-end;
+      }
+      .btn:hover{
+        transform: scale(1.4);
+      }
+     
+      h5
+      {
+        color: white;
+      }
+      .page-header
+      {
+        font-family: 'Freehand', cursive;
+
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container">
+      <div class="page-header text-center ">
+        <h2 ><marquee class="text-center">Liver Disease Prediction</marquee></h2>
+      </div>
+         </div>
+         
+    <form class="justify-content-center" action="signin.php" method="post" autocomplete="off">
+        <div class="form-group">
+             <label for="name"><i class="fa-solid fa-user"></i> Name :
+            </label>
+            <input type="text" placeholder="Enter your name!" class="form-control" id="name" name="Name" required>
+           
+        </div>
+        <div class="form-group ">
+            <label for="Email"><i class="fa-solid fa-envelope"></i>
+
+                Email :
+                </label>
+           <input type="email" placeholder="Enter your Email!"  class="form-control" id="Email" name="Email" required>
+          
+       </div>
+       <div class="form-group">
+        <label for="password"><i class="fa-solid fa-lock"></i>
+          Password:</label>
+          
+       <input type="password" placeholder="Enter your Password!"  class="form-control" id="password" name="Password" required>
+      
+   </div>
+   <div class="form-group">
+    <label for="sname"><i class="fa-solid fa-lock"></i> Confirm password :</label>
+   <input type="password" placeholder="Enter your re-password!"  class="form-control" id="sname" name="Confirm Passsword" required>
+  
+    </div>
+
+    <div class="checkbox">
+        <label><input type="checkbox" required > Remember me</label>
+      </div>
+     <div class=" text-center">
+      <button class="btn  btn-lg" type="sumbit">Register <i class="fa-solid fa-right-to-bracket"></i> </button>
+     </div></br>
+     <h5 class="text-center">--------(or)--------</h5>
+  </form>
+  </div>
+  
+  
+         <div class="centerdiv text-center">    
+           
+            <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?scope=email%20profile&state=Ohmy6pN8DpTGLdH%2BhExEffAn6dB1if1YE6UqHP7bNFqCx1lxwHYyI0eGJvkJydMpJsGk6dZAexP2%0AK4nhyqVVbAiFkKM%2BlI00c2V4p5De8gcA5ABbFOxKQT4SwMJ4rxLIJNR4eZ03BwW4sk7QHBSGnEm0%0ABYyg4HRSGTjvCucYSpC0KBe1brCyaL8TznSZihG8IWqyqBUscazfa27yu4AWyUP62rZAzRgnOSci%0AqjRwGpoqH1%2FgSVQ20BwIg30jH1HUt8bR3AQDzW54jeRvY5U6Xyb4UoL7pK90M2V4RoAd673RClsn%0AwZq4Wvv9SxgQp3kHsXv7%2FdxypZa5CmeAs%2FAaSg%3D%3D&redirect_uri=https%3A%2F%2Flearning.tcsionhub.in%2FiDH%2FExternalLogin%3FsubAction%3Dvalidateuser&response_type=code&client_id=758429406225-djvau1g1lnsgn021ik00os508hegursd.apps.googleusercontent.com&access_type=online&flowName=GeneralOAuthFlow  " target="_blank">
+                <i class="fa-brands fa-2x fa-google"></i>
+             </a>
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=725804884206745&kid_directed_site=0&app_id=725804884206745&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D725804884206745%26redirect_uri%3Dhttps%253A%252F%252Flearning.tcsionhub.in%252FiDH%252FExternalLogin%253FsubAction%253Dvalidateuser%26state%3DOhmy6pN8DpTGLdH%252BhExEfbAnN%252F18muIVRGM8ugP2kfp2nepf1cHKnZr29qbVo1sLXr17CcNsiLNX%250ARey0WrSOh%252BbArp%252BJhUMogTPbGIi6KAPDbIXQ1mC3dojqDnbXT4L89ucXmPM8hRSMw%252BiHDnXoB3zY%250AEUpZnHxQpfmxrt4u7o9Zgbp1TaV3XmrBkH9T%252FOGzeucl2sLQYihFwo1GKeSB6TSTksJNaFieeJnR%250A8uKaD3eqbNYI2bW7rVS%252Bs6aM6c4ht1gLFuQZTwDhdaSgE8nyZpSHFnrT4cLq4pBr6wO0h7PQ6r6G%250A2mWafSyJxZd96qrOUVPtZBAfKBXYhs%252BS%252B3If9A%253D%253D%26response_type%3Dcode%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Db71de6c8-4444-416a-983c-8bad00bfdc44%26tp%3Dunspecified&cancel_url=https%3A%2F%2Flearning.tcsionhub.in%2FiDH%2FExternalLogin%3FsubAction%3Dvalidateuser%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DOhmy6pN8DpTGLdH%252BhExEfbAnN%252F18muIVRGM8ugP2kfp2nepf1cHKnZr29qbVo1sLXr17CcNsiLNX%250ARey0WrSOh%252BbArp%252BJhUMogTPbGIi6KAPDbIXQ1mC3dojqDnbXT4L89ucXmPM8hRSMw%252BiHDnXoB3zY%250AEUpZnHxQpfmxrt4u7o9Zgbp1TaV3XmrBkH9T%252FOGzeucl2sLQYihFwo1GKeSB6TSTksJNaFieeJnR%250A8uKaD3eqbNYI2bW7rVS%252Bs6aM6c4ht1gLFuQZTwDhdaSgE8nyZpSHFnrT4cLq4pBr6wO0h7PQ6r6G%250A2mWafSyJxZd96qrOUVPtZBAfKBXYhs%252BS%252B3If9A%253D%253D%23_%3D_&display=page&locale=en_GB&pl_dbl=0" target="_blank">
+                <i class="fa-brands fa-2x fa-facebook"></i>
+            </a>
+             
+        </div>
+      
+
+    
+ 
+</body>
+</html> 
