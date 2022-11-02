@@ -4,6 +4,16 @@ Liver diseases avert the normal function of the liver. Mainly due to the large a
 
 This Project examines data from liver patients concentrating on relationships between a key list of liver enzymes, proteins, age and gender using them to try and predict the likeliness of liver disease. Here we are building a model by applying various machine learning algorithms find the best accurate model. And integrate to flask based web application. User can predict the disease by entering parameters in the web application.
 
-Technical Architecture:
+# Technical Architecture:
 
 ![image](https://user-images.githubusercontent.com/72776200/196501619-7f4e312c-a43a-4d54-a52a-90cb18cb77b3.png)
+
+
+# Domain
+Machine Learning
+
+# Requirements
+Python,Python Web Frame Works,Python For Data Visualization,Data Preprocessing Techniques,Machine Learning,IBM Cloud,IBM Watson Studio,Python-Flask
+
+# Text Editor
+VS code
