@@ -13,7 +13,10 @@ This Project examines data from liver patients concentrating on relationships be
 Machine Learning
 
 # Requirements
-Python,Python Web Frame Works,Python For Data Visualization,Data Preprocessing Techniques,Machine Learning,IBM Cloud,IBM Watson Studio,Python-Flask
+Python,Python Web Frame Works,Python For Data Visualization,Data Preprocessing Techniques,Machine Learning,IBM Cloud,IBM Watson Studio,Python-Flask, CSS, JavaScript
 
 # Text Editor
 VS code
+
+# Database
+phpMyAdmin
