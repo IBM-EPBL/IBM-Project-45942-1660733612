@@ -18,6 +18,9 @@ Python,Python Web Frame Works,Python For Data Visualization,Data Preprocessing T
 # Text Editor
 VS code
 
+# Server
+XAMP
+
 # Database
 phpMyAdmin
 
