@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver pretection</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2151ed312.js" crossorigin="anonymous"></script>
+    <link href="fonts/glyphicons-halflings-regular.eot" >
+    <style>
+        body
+        {
+            background-color: #2b4373;                
+            background-repeat:no-repeat;
+            background-position: cover;
+            opacity: calc(1.5);
+        }
+        .container
+        {
+            background-color: black;
+             background-color: transparent;
+             align-content: center;
+
+        }
+        form
+        {
+
+            background-color:rgba(0, 0, 0,0.5) ;
+            height: 500px;
+            width: 400px;
+            padding: 20px;
+            margin: 70px;
+            border: 2px solid whitesmoke;
+            border-radius: 30px;
+            box-shadow: all 10px whitesmoke;
+            color: white;
+            justify-content: center;
+            margin: auto;
+            box-shadow: 1px 2px 20px cyan;
+        }
+        form:hover
+        {
+            background-color: rgba(0, 0, 0, 0.4);
+            box-shadow: inset 4px 1px 4px 1px whitesmoke; 
+
+                        
+        }   
+           
+        .btn
+        {
+            align-items: center;
+            background-color: white;
+        }
+        #image
+        {
+            height: 400px;
+            width: 100px;
+            border-radius: 10px;
+        }
+       
+       .links{
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        border-radius: 50px;
+        line-height: 60px;
+        border: 2px solid whitesmoke;
+        
+        
+       }
+       .centerdiv
+       {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 400px;
+        margin: auto;
+        height:15vh;
+        border-radius:40px ;
+        display: flex;
+        justify-content: center;
+        padding-top: 23px;
+        border: 2px solid cyan;
+       }
+       .fa-facebook
+       {
+        color: #2b4373;
+        border-radius: 20px;
+        transition: scale(1.4)step-end;
+        background-color: white;
+       }
+       .fa-google
+       {
+        color:rgb(50, 50, 50);
+        border-radius:20px ;
+        transition: scale(1.4)step-end;
+        background-color: white;
+       }
+       a i{
+        transition: all 0,3s linear;
+       }
+       a:hover i
+       {
+        transform: scale(1.4);
+       }
+      .form-control
+      {
+        border-radius: 125px;
+        border: 2px solid cyan;
+        background-color: transparent;
+        color: cyan;
+        padding: 05px;
+        margin: 10px;
+        width: 300px;
+      }
+      
+      
+      .btn
+      {
+        background-color: white;
+        border: 2px solid cyan;
+        box-shadow: 1px 1px 10px white;
+        border-radius: 50px;
+        transition: scale(1.4)step-end;
+        margin: 10px auto;
+        height: 30px;
+
+      } 
+      .btn:hover{
+        transform: scale(1.4);
+      }
+     
+      h5
+      {
+        color: white;
+      }
+      .page-header
+      {
+        font-family: 'Freehand', cursive;
+
+      }
+      span
+      {
+        display: block;
+        width: 50px;
+        margin: auto;
+        float: right;
+        background-color: transparent;
+        border-radius: 50%;
+        
+        padding-bottom: 20px;
+      }
+     
+      .fa-arrow-right
+      {
+      
+        color: black;
+        display: block;
+        align-items: center;  
+        margin: auto;
+        background-color: silver;
+        padding: 10px;
+        border-radius: 50px;
+       
+        
+      }
+      .fa-arrow-right:hover
+      {
+        background-color: aqua;
+        
+        
+      }
+     a
+     {
+      color: black;
+      text-decoration: none;
+      
+
+     }
+     h5
+     {
+      margin: 0px;
+      padding: 0px;
+      
+
+     }
+     #container
+     {
+      background-color: black;
+      width: 380px;
+      margin: auto;
+      border-radius: 50px;
+     }
+     .container1
+     {
+      background-color: white;
+      border-radius: 10px;
+     }
+
+      
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container1">
+      <div class="page-header text-center ">
+        <h2 ><marquee class="text-center">Liver Disease Prediction</marquee></h2>
+      </div>
+         </div>
+         
+    <form class="justify-content-center" action="signin.php" method="POST" autocomplete=>
+        <div class="form-group">
+             <label for="name"><i class="fa-solid fa-user"></i> Name :
+            </label></br>
+            <input type="text" placeholder="Enter your name!" class="form-control" id="name" name="uname"  required></br>
+           
+        </div>
+        <div class="form-group ">
+            <label for="Email"><i class="fa-solid fa-envelope"></i>
+
+                Email :
+                </label></br>
+           <input type="email" placeholder="Enter your Email!"  class="form-control" id="Email" name="Email"  required></br>
+          
+       </div>
+       <div class="form-group">
+        <label for="password"><i class="fa-solid fa-lock"></i>
+          Password:</label></br>
+          
+       <input type="password" placeholder="Enter your Password!"  class="form-control" id="password" name="upassword"   required></br>
+      
+   </div>
+   <div class="form-group">
+    <label for="sname"><i class="fa-solid fa-lock"></i> Confirm Password :</label></br>
+   <input type="password" placeholder="Enter your re-password!"  class="form-control" id="sname" name="Confirm Password" required></br>
+  
+    </div>
+
+    <div class="checkbox">
+        <label><input type="checkbox" required > Remember me</label>
+      </div>
+     <div class=" text-center">
+      <button class="btn  btn-lg" type="sumbit">Register <i class="fa-solid fa-right-to-bracket"></i> </button>
+      <h4>Already have account?<a href="login.html">login here</a></h4>
+      <span>
+        <a  href="login.html">
+          <i class="fa-solid fa-2x fa-arrow-right"></i>
+        </a>
+       </span>
+       
+    </div></br>
+     
+    
+  </form>
+
+     
+      
+
+    
+ 
+</body>
+</html> 
