@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/predict.css">
+
+
+
+    <style>
+        .form-control
+        {
+            width: 350px;
+            height: 30px;
+            border-radius: 40px;
+            border: 2px solid cyan;
+            text-align: center;
+      
+        }
+        .form-control1
+        {
+            width: 350px;
+            height: 30px;
+            border-radius: 20px;
+            border: 2px solid cyan;
+            text-align: center;
+
+        }
+        .gender_selection
+        {
+           
+            background-color: white;
+            color: black;
+          
+        }
+        .male
+        {
+            margin: 10px ;
+        }
+        .female
+        {
+            margin: 20px ;
+        }
+        .container {
+    height: 95%;
+    width: 100%;
+    margin:  20px auto;
+    background-color: black;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    color: cyan;
+   
+
+
+}
+
+
+.formfields {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.fields {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    font-size: x-large;
+}
+.gender_selection{
+    display: block;
+    justify-content: space-between;
+}
+.fields input {
+    margin: 0%;
+    padding: 0%;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    align-self: flex-end;
+    margin: 20px 0px 20px 20px;
+}
+
+.button {
+    margin-left: 120px; 
+    font-size: large;
+    display: block;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color:black;
+    color: cyan;
+    border-bottom: 2px solid cyan;
+}
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1 style="color: black;"> Liver Disease Prediction</h1>
+
+        <form class="container" action="/predict" method="post">
+            <ul class="formfields">
+                <li class="fields">
+                    <label for="age">Age:</label></br>
+                    <input type="text" id="age" name="age" placeholder=" Age" class="form-control" required>
+                </li><br>
+                <li class="fields">
+                    <label for="gender">Gender:</label><br>
+                    <div class="gender_selection form-control1">
+                        <label for="Male" class="male">Male:</label>
+                        <input type="radio" id="Male" name="gender" required>
+                        <label for="Female" class="female">Female:</label>
+                        <input type="radio" id="Female" name="gender">
+                    </div>
+                </li><br>
+                <li class="fields">
+                    <label for="tb">Total Bilirubin:</label><br>
+                    <input type="text" id="tb" name="tb" placeholder="Total Bilirubin"  class="form-control"required>
+                </li><br>
+                <li class="fields">
+                    <label for="db">Direct Bilirubin:</label><br>
+                    <input type="text" id="dbi" name="dbi" placeholder="Direct Bilirubin" class="form-control" required>
+                </li><br>
+                <li class="fields">
+                    <label for="ap">Alkaline Phosphotase:</label><br>
+                    <input type="text" id="ap" name="ap" placeholder=" Alkaline Phosphotase "  class="form-control" required>
+                </li><br>
+                <li class="fields">
+                    <label for="aa1">Alamine AminoTransferase:</label><br>
+                    <input type="text" id="aa1" name="aa1" placeholder="Alamine AminoTransferase" class="form-control"  required>
+                </li><br>
+                <li class="fields">
+                    <label for="aa2">Aspartate AminoTransferase:</label><br>
+                    <input type="text" id="aa2" name="aa2" placeholder="Aspartate AminoTransferase" class="form-control" required>
+                </li><br>
+                <li class="fields">
+                    <label for="tp">Total Proteins:</label><br>
+                    <input type="text" id="tp" name="tp" placeholder="Total Proteins" class="form-control" required>
+                </li><br>
+                <li class="fields">
+                    <label for="a">Albumin:</label><br>
+                    <input type="text" id="a" name="a" placeholder="Albumin"  class="form-control" required>
+                </li><br>
+                <li class="fields">
+                    <label for="agr">Albumin Globulin Ratio:</label><br>
+                    <input type="text" id="agr" name="agr" placeholder=" Albumin Globulin Ratio" class="form-control" required>
+                </li><br>
+            </ul>
+            <div class="buttons">
+                <form action="/">
+                    <button class="button"> Go Back </button>
+                </form>
+                <input type="submit" class="button" value="Predict">
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <style>
+        body
+        {
+            background-color: RGB(6, 206, 251);
+        }
+    .button {
+    margin: 20xp auto;
+     }
+
+    .button {
+   
+    font-size: large;
+    display: block;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color:black;
+    color: cyan;
+    border-bottom:2px solid cyan;
+    
+}
+.button1 {
+    margin: 20xp auto;
+     }
+
+    .button1 {
+   
+    font-size: large;
+    display: block;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color:black;
+    color: cyan;
+    border-bottom:2px solid cyan;
+    float: right;
+    margin-top: -60px;
+    
+}
+
+   .buttons {
+    display: flex;
+    align-self: flex-end;
+    margin: 20px 0px 20px 20px;
+   }
+   h1
+   {
+    text-align: center;
+   }  
+  .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}  
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white;">You have disease</h1>
+    <form action="/home">
+        <button class="button"> Home</button>
+    </form></br>
+    <form action="http://127.0.0.1:5000/home?">
+        <button class="button1">  Predict Again</button>
+    </form>
+    <div class="container ">
+        <img src="{{url_for('static', filename='Images/sad.jpg')}}"  class="img" />
+    </div>
+</body>
+
+</html>

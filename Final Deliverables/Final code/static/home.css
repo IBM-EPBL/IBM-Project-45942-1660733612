@@ -1,0 +1,51 @@
+html {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color:RGB(6, 206, 251);
+    background-size: 100%;
+
+}
+
+
+
+
+
+
+
+h1 {
+    position: relative;
+    font-size: 3rem;
+    font-family: cursive;
+    padding: 0px 15px;
+}
+
+p {
+    font-size: larger;
+    
+}
+
+.button {
+    margin: 20xp auto;
+}
+
+button {
+   
+    font-size: large;
+    display: block;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color:black;
+    color: cyan;
+    border-bottom:2px solid cyan;
+    
+}
+

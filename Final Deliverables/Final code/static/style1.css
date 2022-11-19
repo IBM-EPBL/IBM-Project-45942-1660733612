@@ -1,0 +1,8 @@
+.bg-nav{
+background: #003973;  /* fallback for old browsers */
+background-image: url(3.jpg);
+background-size: cover;     
+}
+.row{
+margin-top:20px;
+}
